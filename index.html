@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!-- <script src="https://cdn.tailwindcss.com"></script> -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="./css/main.css?<?=filesize('./css/main.css?')">
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+  <div id="container">
+  <canvas width=600 height=600 id="gol"></canvas>
+    <div id="overlay">
+
+      <!-- Left panel -->
+      <div class="main-pane">
+        <div class="left-pane">
+          <div id="profile-pic">
+            <img src="./img/ij.png">
+          </div>
+
+          <div class="left-pane-content">
+            <div  class="tech-info">
+              <h3 class="sub-header">Technologies</h3>
+              <ul id="tech-list"></ul>
+            </div>
+            
+            <div  class="prog-info">
+              <h3 class="sub-header">Programming</h3>
+              <ul id="prog-list"></ul>
+            </div>
+
+            <div class="langs-info">
+              <h3 class="sub-header">Languages</h3>
+              <ul id="lang-list"></ul>
+            </div>
+            
+          </div>         
+        </div>
+
+        <!-- Right panel -->
+        <div class="right-pane">
+
+          <!-- Top description -->
+          <h2 id="title-top"></h2>
+          <h3 id="position-top"></h3>
+          <p id="desc-top"></p>  
+
+          <!-- Basic information -->
+          <div class="basic-info">
+            <ul id="basic-records"></ul>
+          </div>
+          
+          <!-- Education information -->
+          <div class="edu-info">
+            <h3 class="sub-header">Education</h3>
+            <ul id="edu-records"></ul>
+          </div>
+
+          <!-- Experience information -->
+          <div class="exp-info">
+            <h3 class="sub-header">Experience</h3>
+            <ul id="exp-records"></ul>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+  
+  <script src="./js/data.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="./js/gol.js"></script>
+
+</body>
+</html>
