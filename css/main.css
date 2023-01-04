@@ -29,14 +29,6 @@ a:hover {
   padding-bottom: 40px;
   padding-left: auto;
   padding-right: auto;
-  /*border-width: 2px;
-  border-style: solid;
-  border-image: 
-    linear-gradient(
-      to bottom, 
-      rgb(150,150,150), 
-      rgba(0, 0, 0, 0)
-    ) 1 100%;*/
 }
 
 #profile-pic img {
@@ -107,6 +99,17 @@ a:hover {
   /* border: solid 2px #000; */
 }
 
+.print-btn {
+  text-align: right;
+}
+
+.print-btn a {
+  text-decoration: none;
+  padding: 5px;
+  border: solid 1px #EE6123;
+  border-radius: 5px;
+}
+
 #position-top {
   color: #EE6123;
 }
@@ -162,8 +165,12 @@ a:hover {
 }
 
 .edu-info .rec-per, .exp-info .rec-per {
-  padding-left: 15px;
+  padding-left: 30px;
   font-style: italic;
+}
+
+.exp-info .rec-techs {
+  padding-left: 30px;
 }
 
 .exp-info .rec-pos {
@@ -209,4 +216,111 @@ a:hover {
   height: 10px;
   background-color: #ed9a76;
   border-radius: 5px;
+}
+
+@media print {
+  @page { margin: 0; }
+  body { margin: 0cm; }
+
+  *{
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 11pt;
+  }
+
+  #gol {
+      display: none;
+  }
+
+  .right-pane h3 {
+    margin-top: -10px; 
+    margin-bottom: -15px;
+  } 
+
+  .rec-res {
+    display: none;
+  }
+
+  #web-pic {
+    display: none;
+  }
+
+  #print-pic {
+    display: block !important;
+  }
+
+  #profile-pic img {
+    border-width: 0px;
+    height: 200px !important; 
+    width: 150px !important;
+    box-shadow: none;
+    border-radius: 5%;
+  }  
+
+  #overlay {
+    width: 100%;
+    margin-left: 0%;
+  }
+
+  .main-pane {
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    gap: 1em;
+  }
+
+  .print-btn {
+    display: none;
+  }
+
+  #desc-top {
+    margin-bottom: -10px;
+    font-size: smaller;
+  }
+
+  .left-pane {
+    border-right: solid 2px rgb(171, 171, 171);
+  }
+
+  .left-pane-content {
+    padding-top: 20px;
+  }
+
+  .left-pane-content i {
+    display: none;
+  }
+
+  .langs-info ul, .tech-info ul, .prog-info ul {
+    list-style: disc;
+  }
+
+  .record {
+    list-style: none;
+    display: flex;
+    padding: 2px;
+  }
+  .prog-list .p_bar {
+    display: none;
+  }
+
+  .langs-info ul li, .tech-info ul li{
+    display: list-item;
+    padding-top: 5px;
+    width: 100%;  
+  }
+
+  .langs-info ul li .rec-level {
+    margin-top: 1px;
+    font-size: smaller;
+    margin-left: auto;
+    text-align: left;
+    color: #7d7d7d;
+  }
+
+  .edu-info li, .exp-info li{
+    list-style: none;
+    padding-bottom: 2px;
+  }
+
+  .rec-techs {
+    font-size: smaller;
+  }
 }

@@ -6,6 +6,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="./css/main.css?<?=filesize('./css/main.css?')">
+<link rel="stylesheet" type="text/css" href="./css/print_page.css">
 <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
 <link rel="icon" type="image/x-icon" href="./img/favicon.png">
 </head>
@@ -14,12 +15,13 @@
   <div id="container">
   <canvas width=600 height=600 id="gol"></canvas>
     <div id="overlay">
-
+    
       <!-- Left panel -->
       <div class="main-pane">
         <div class="left-pane">
           <div id="profile-pic">
-            <img src="./img/ij.png">
+            <img id="web-pic" src="./img/ij.png">
+            <img id="print-pic" src="./img/p_pic.png" style="display: none;">
           </div>
 
           <div class="left-pane-content">
@@ -43,7 +45,9 @@
 
         <!-- Right panel -->
         <div class="right-pane">
-
+          <div class="print-btn">
+            <a href="" onclick="window.print()">Print</a> 
+          </div>
           <!-- Top description -->
           <h2 id="title-top"></h2>
           <h3 id="position-top"></h3>

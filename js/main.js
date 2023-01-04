@@ -99,6 +99,11 @@ function loadExpInfo() {
         recRes.innerText = expData.resposibility;
         expEntry.appendChild(recRes);
 
+        const recTechs = document.createElement("div");
+        recTechs.classList.add("rec-techs");
+        recTechs.innerHTML = "<b>Technologies: </b>" + expData.techs;
+        expEntry.appendChild(recTechs);
+
         const recPeriod = document.createElement("div");
         recPeriod.classList.add("rec-per");
         recPeriod.innerText = expData.period;
