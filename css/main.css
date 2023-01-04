@@ -277,7 +277,7 @@ a:hover {
   }
 
   .left-pane {
-    border-right: solid 2px rgb(171, 171, 171);
+    border-right: solid 2px #aaa !important;
   }
 
   .left-pane-content {
