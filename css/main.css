@@ -297,8 +297,10 @@ a:hover {
     display: flex;
     padding: 2px;
   }
-  .prog-list .p_bar {
-    display: none;
+	
+  .prog-info .p_bar {
+    height: 0px;
+    display: none !important;
   }
 
   .langs-info ul li, .tech-info ul li{
