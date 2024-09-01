@@ -1,2 +1,2 @@
 # Personal web page
-Access the web site [here](https://ijmax.github.io/personal_web/).
+Access the website [here](https://bit-magpie.github.io/personal_web/).
