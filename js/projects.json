@@ -1,0 +1,28 @@
+{
+    "projects": [
+        {
+            "title": "AI Image Classification System",
+            "description": "A deep learning model built with TensorFlow that classifies images with 95% accuracy. Implemented using Python and deployed as a web service.",
+            "date": "2024",
+            "technologies": ["Python", "TensorFlow", "Flask", "Docker"],
+            "url": "https://github.com/username/ai-classification",
+            "image": "img/ai-project.jpg"
+        },
+        {
+            "title": "E-commerce Platform",
+            "description": "Full-stack e-commerce solution with real-time inventory management and payment processing integration.",
+            "date": "2023",
+            "technologies": ["React", "Node.js", "MongoDB", "Stripe API"],
+            "url": "https://github.com/username/ecommerce-platform",
+            "image": null
+        },
+        {
+            "title": "Task Management App",
+            "description": "A responsive web application for managing daily tasks and projects with team collaboration features.",
+            "date": "2023",
+            "technologies": ["Vue.js", "Firebase", "Bootstrap"],
+            "url": "https://github.com/username/task-manager",
+            "image": null
+        }
+    ]
+}
