@@ -1,0 +1,122 @@
+{
+  "publications": [
+    {
+      "authors": ["I. Jayarathne", "M. Cohen", "S. Amarakeerthi"],
+      "title": "BrainID: Development of a Biometric EEG-Based Authentication System",
+      "type": "conference",
+      "journal_name": "7th IEEE Annual Information Technology, Electronics, and Mobile Communication Conference (IEMCON)",
+      "date": "2016-10",
+      "url": "https://doi.org/10.1109/IEMCON.2016.7746325",
+      "citations": 94,
+      "note": "Best paper in Electromagnetics and Control System track"
+    },
+    {
+      "authors": ["I. Jayarathne", "M. Cohen", "S. Amarakeerthi"],
+      "title": "Survey of EEG-based biometric authentication",
+      "type": "conference",
+      "journal_name": "IEEE 8th International Conference on Awareness Science and Technology (iCAST)",
+      "date": "2017-11",
+      "url": "https://doi.org/10.1109/ICAST.2017.8256471",
+      "citations": 49
+    },
+    {
+      "authors": ["I. Jayarathne", "M. Cohen", "S. Amarakeerthi"],
+      "title": "Person identification from EEG using various machine learning techniques with inter-hemispheric amplitude ratio",
+      "type": "journal",
+      "journal_name": "PLOS One",
+      "date": "2020-09",
+      "url": "https://doi.org/10.1371/journal.pone.0238872",
+      "citations": 33
+    },
+    {
+      "authors": ["N. Matsui", "I. Jayarathne", "H. Kageyama", "K. Naruse", "K. Urabe", "R. Sakamoto", "T. Mashiko", "S. Kumada", "Y. Yaguchi", "M. Yashiro", "Y. Ishibashi", "M. Yutani"],
+      "title": "Local and global path planning for autonomous mobile robots using hierarchized maps",
+      "type": "journal",
+      "journal_name": "Journal of Robotics and Mechatronics",
+      "date": "2022-02",
+      "url": "https://www.jstage.jst.go.jp/article/jrobomech/34/1/34_86/_pdf",
+      "citations": 10
+    },       
+    {
+      "authors": ["I. Jayarathne", "M. Cohen", "M. Frishkopf", "G. Mulyk"],
+      "title": "Relaxation sweet spot exploration in pantophonic musical soundscape using reinforcement learning",
+      "type": "conference",
+      "journal_name": "24th International Conference on Intelligent User Interfaces: Companion",
+      "date": "2019-03",
+      "url": "https://doi.org/10.1145/3308557.3308686",
+      "citations": 3
+    },
+    {
+      "authors": ["I. Jayarathne", "M. Cohen"],
+      "title": "Autoencoder-based one-class image classifier",
+      "type": "workshop",
+      "journal_name": "326th SICE Tohoku Branch Workshop",
+      "date": "2019-11",
+      "url": "https://www.researchgate.net/publication/337929447_Autoencoder-based_One-class_Classification#fullTextFileContent",
+      "citations": 2
+    },
+    {
+      "authors": ["J. Taery Kim", "A. Naik", "I. Jayarathne", "S. Ha", "J.Y. Chew"],
+      "title": "Modeling social interaction dynamics using temporal graph networks",
+      "type": "conference",
+      "journal_name": "IEEE International Conference on Robot & Human Interactive Communication (RO-MAN 2024)",
+      "date": "2024-08",
+      "url": "https://arxiv.org/abs/2404.06611",
+      "citations": 1
+    },
+    {
+      "authors": ["J.Y. Chew", "I. Jayarathne"],
+      "title": "Human States and Nonverbal Cues in Multi-party Facilitation: A Statistical Perspective",
+      "type": "conference",
+      "journal_name": "ACM/IEEE International Conference on Human-Robot Interaction 2024",
+      "date": "2024-03",
+      "url": "https://dl.acm.org/doi/10.1145/3610978.3640643",
+      "citations": 1
+    },
+    {
+      "authors": ["A.L. Martin-Ozimek", "I. Jayarathne", "S.L. Mon", "J.Y. Chew"],
+      "title": "Diffusion-Based Imitation Learning for Social Pose Generation",
+      "type": "conference",
+      "journal_name": "ACM/IEEE International Conference on Human-Robot Interaction (HRI '25)",
+      "date": "2025-03",
+      "url": "https://dl.acm.org/doi/10.5555/3721488.3721705",
+      "citations": 0
+    },
+    {
+      "authors": ["A.L. Martin-Ozimek", "I. Jayarathne", "S.L. Mon", "J.Y. Chew"],
+      "title": "Learning Nonverbal Cues in Multiparty Social Interactions for Robotic Facilitators",
+      "type": "conference",
+      "journal_name": "ACM/IEEE International Conference on Human-Robot Interaction (HRI '25)",
+      "date": "2025-03",
+      "url": "#",
+      "citations": 0
+    },
+    {
+      "authors": ["I. Jayarathne", "K. Naruse", "S. Shigekazu", "K. Shinji", "T. Torii"],
+      "title": "Parallel Tether Control System for Data Collection in Nuclear Disaster Sites",
+      "type": "conference",
+      "journal_name": "The 31st Symposium on Fuzzy, Artificial Intelligence, Neural Networks and Computational Intelligence",
+      "date": "2023-09",
+      "url": "#",
+      "citations": 0
+    },
+    {
+        "authors": ["I. Jayarathne", "M. Cohen", "M. Frishkopf", "G. Mulyk"],
+        "title": "Machine learning search for relaxation 'sweet spot' in pantophonic musical soundscape",
+        "type": "symposium",
+        "journal_name": "Life Engineering Symposium (LE 2018)",
+        "date": "2018-09",
+        "url": "#",
+        "citations": 0
+    }, 
+    {
+        "authors": ["I. Jayarathne", "M. Cohen", "S. Amarakeerthi"],
+        "title": "Low-cost Line-Following and Load-Picking Robot",
+        "type": "workshop",
+        "journal_name": "IEICE Service Computing Branch Research Presentation Meeting & WEIE Workshop",
+        "date": "2016-06",
+        "url": "#",
+        "citations": 0
+    }
+  ]
+}

@@ -1,85 +1,98 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Isuru Jayarathne [Profile]</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
-<link rel="stylesheet" type="text/css" href="./css/main.css?<?=filesize('./css/main.css?')">
-<link rel="stylesheet" type="text/css" href="./css/print_page.css">
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
-<link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
 </head>
-
 <body>
-  <div id="container">
-  <canvas width=600 height=600 id="gol"></canvas>
-    <div id="overlay">
-    
-      <!-- Left panel -->
-      <div class="main-pane">
-        <div class="left-pane">
-          <div id="profile-pic">
-            <img id="web-pic" src="./img/ij.png">
-            <img id="print-pic" src="./img/p_pic.png" style="display: none;">
-          </div>
+    <div class="main-container">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid px-0">
+                <a class="navbar-brand" href="index.html">Isuru Jayarathne</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="publications.html">Publications</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="projects.html">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="blog.html">Blog</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cv.html">CV</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
 
-          <div class="left-pane-content">
-            <div  class="tech-info">
-              <h3 class="sub-header">Technologies</h3>
-              <ul id="tech-list"></ul>
-            </div>
-            
-            <div  class="prog-info">
-              <h3 class="sub-header">Programming</h3>
-              <ul id="prog-list"></ul>
+        <div class="home-container">
+            <div class="home-left-column">
+                <img src="img/ij.png" alt="Isuru Jayarathne" class="profile-image-home">
+                <div class="contact-info">
+                    <p><strong>Email:</strong><br>isuru.jayarathne@gmail.com</p>
+                    <p><strong>Phone:</strong><br>[+81] 070-4468-7841</p>
+                    <p><strong>Location:</strong><br>Saitama, Japan</p>
+                    <p><strong>GitHub:</strong><br><a href="https://github.com/bit-magpie">github.com/bit-magpie</a>                    
+                    <p><strong>LinkedIn:</strong><br><a href="https://linkedin.com/in/isuru-jayarathne/">linkedin.com/in/isuru-jayarathne/</a></p>
+                    <p><strong>Google Scholar:</strong><br><a href="https://scholar.google.com/citations?user=3k1-3wUAAAAJ&hl=en">scholar.google.com/ij/</a></p>
+                </div>
             </div>
 
-            <div class="langs-info">
-              <h3 class="sub-header">Languages</h3>
-              <ul id="lang-list"></ul>
+            <div class="gradient-separator"></div>
+
+            <div class="home-right-column">
+                <h1>Welcome — I'm Isuru</h1>
+                <p> 
+                    I am a researcher and engineer working across the domains of physiological signal analysis and robotics, unified by a strong foundation in artificial intelligence and machine learning.
+                    In the field of biosignal analysis, I focus on decoding neural and cardiac signals—primarily EEG and ECG—to uncover insights into brain states, cognitive functions, and physiological health.
+                    In robotics, I work on designing and developing intelligent systems including multi-robot path planning, robot arm control, and autonomous robots for disaster response.
+                    I integrate advanced AI/ML techniques such as large language models (LLMs), computer vision (CV), and reinforcement learning (RL) to solve complex problems in both physiological data interpretation and social robotics.
+                </p>
+
+                <div class="home-section">
+                    <h2>Research & Engineering Focus</h2>
+                    <p>I explore questions such as:</p>
+                    <ul class="home-list">
+                        <li>How can machine learning uncover hidden patterns in neural and cardiac signals?</li>
+                        <li>How can robots plan and coordinate efficiently in uncertain, dynamic environments?</li>
+                        <li>How can robots plan and coordinate efficiently in uncertain, dynamic environments?</li>
+                    </ul>
+
+                    <p>My domains of expertise include:</p>
+                    <ul class="home-list">
+                        <li>Biosignal Processing</li>
+                        <li>Robot Motion Planning</li>
+                        <li>Social Robotics</li>
+                        <li>AI/ML for Real-World Applications</li>
+                    </ul>
+                </div>
+                <div class="home-section">
+                    <h2>Other Interests</h2>
+                    <ul class="home-list">
+                        <li>Philosophy</li>
+                        <li>Psychology</li>
+                        <li>Politics</li>
+                    </ul>
+                </div>
             </div>
-            
-          </div>         
         </div>
-
-        <!-- Right panel -->
-        <div class="right-pane">
-          <div class="print-btn">
-            <a href="" onclick="window.print()">Print</a> 
-          </div>
-          <!-- Top description -->
-          <h2 id="title-top"></h2>
-          <h3 id="position-top"></h3>
-          <p id="desc-top"></p>  
-
-          <!-- Basic information -->
-          <div class="basic-info">
-            <ul id="basic-records"></ul>
-          </div>
-          
-          <!-- Education information -->
-          <div class="edu-info">
-            <h3 class="sub-header">Education</h3>
-            <ul id="edu-records"></ul>
-          </div>
-
-          <!-- Experience information -->
-          <div class="exp-info">
-            <h3 class="sub-header">Experience</h3>
-            <ul id="exp-records"></ul>
-          </div>
-
-        </div>
-
-      </div>
-
     </div>
-  </div>
-  
-  <script src="./js/data.js"></script>
-  <script src="./js/main.js"></script>
-  <script src="./js/gol.js"></script>
-
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
