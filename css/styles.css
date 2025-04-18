@@ -454,6 +454,21 @@ h3 {
     .home-list {
         padding-left: 1.5rem;
     }
+
+    /* CV page responsiveness */
+    .cv-container {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .cv-left-column {
+        display: none; /* Hide left column on mobile */
+    }
+
+    .cv-right-column {
+        width: 100%; /* Make right column take full width */
+        padding: 0;
+    }
 }
 
 /* Publications page styles */
