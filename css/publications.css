@@ -111,3 +111,27 @@
 .publication-table a:hover {
     text-decoration: underline;
 }
+
+/* Media queries for mobile devices */
+@media (max-width: 768px) {
+    .sorting-controls {
+        display: none;
+    }
+
+    .publication-table td:nth-child(3), /* Year column */
+    .publication-table td:last-child    /* Citations column */ {
+        display: none;
+    }
+
+    .publication-table td:nth-child(2) {
+        padding-right: 0;
+    }
+
+    .publication-table td {
+        padding: 1rem 0.25rem;
+    }
+
+    .publication-table td:first-child {
+        padding-right: 0.5rem;
+    }
+}
