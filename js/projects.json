@@ -9,6 +9,14 @@
             "image": "img/project-imgs/classic_learner.png"
         },
         {
+            "title": "Diffusion-based Imitation Learning",
+            "description": "A research project that explores the use of diffusion models for imitation learning. The project includes simple path finding scenario using custom dataset",
+            "date": "2024",
+            "technologies": ["PyTorch", "torch-vision", "CV"],
+            "url": "https://github.com/bit-magpie/Diffusion-based_Imitation_Learning",
+            "image": "img/project-imgs/diffusion_il.png"
+        },
+        {
             "title": "Grid-based Rotbot Path Generator",
             "description": "A Python module that generates a path for a robot to follow in a grid-based environment. The path is generated using the A* algorithm and can be in ROS",
             "date": "2022",
