@@ -103,12 +103,12 @@
     color: #666;
 }
 
-.publication-table a {
+a {
     color: #EE6123;
     text-decoration: none;
 }
 
-.publication-table a:hover {
+a:hover {
     text-decoration: underline;
 }
 

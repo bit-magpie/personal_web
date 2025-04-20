@@ -60,6 +60,17 @@ h3 {
     padding: 2rem 0;
 }
 
+.cv-container a{
+    color: #EE6123;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.cv-container a:hover {
+    color: #EE6123;
+    text-decoration: underline;
+}
+
 /* CV Page Specific Styles */
 .cv-container {
     display: flex;
