@@ -1,3 +1,4 @@
+/* Base styles */
 body {
     font-family: 'Raleway', sans-serif;
     background-color: white;
@@ -9,13 +10,13 @@ body {
     margin: 0 auto;
 }
 
+/* Navigation styles */
 .navbar {
-    padding: 2rem 0 1rem 0;  /* Increased top padding to 2rem */
+    padding: 2rem 0 1rem 0;
 }
 
-/* Update navigation link colors */
 .nav-link {
-    color: #444 !important;  /* darker gray for normal state */
+    color: #444 !important;
     margin: 0 0.5rem;
     border: 1px solid #EE6123;
     border-radius: 15px;
@@ -35,6 +36,7 @@ body {
     font-size: 1.5rem;
 }
 
+/* Common typography */
 h1 {
     font-size: 2rem;
     color: #EE6123;
@@ -58,148 +60,10 @@ h3 {
     padding: 2rem 0;
 }
 
-.project-card {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    transition: all 0.3s ease;
-    min-height: 250px;
-    display: flex;
-    position: relative;
-    background: #fff;
-    width: 100%;
-    margin: 0 auto;
-}
-
-.project-card:hover {
-    box-shadow: 0 5px 15px rgba(238, 97, 35, 0.2);
-}
-
-.project-image-container {
-    width: 350px;
-    min-width: 350px;
-    background-color: #f5f5f5;
-    border-radius: 8px 0 0 8px;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.project-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.project-image-placeholder {
-    font-size: 4rem;
-    color: #ccc;
-}
-
-.project-content-wrapper {
-    flex: 1;
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-}
-
-.project-card-content {
-    flex: 1;
-    overflow-y: auto;
-    padding-right: 10px;
-    margin-bottom: 1rem;
-}
-
-.project-card-content::-webkit-scrollbar {
-    width: 6px;
-}
-
-.project-card-content::-webkit-scrollbar-track {
-    background: #f1f1f1;
-    border-radius: 3px;
-}
-
-.project-card-content::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 3px;
-}
-
-.project-card-content::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
-
-.project-link {
-    display: inline-block;
-    padding: 0.5rem 1rem;
-    background-color: #EE6123;
-    color: white;
-    text-decoration: none;
-    border-radius: 4px;
-    transition: background-color 0.2s;
-    position: absolute;
-    bottom: 1.5rem;
-    right: 1.5rem;
-}
-
-.project-link:hover {
-    background-color: #d94d0e;
-    color: white;
-}
-
-.projects-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 2rem;
-    margin: 2rem auto;
-    max-width: 1000px;
-    padding: 0 10px;
-}
-
-/* Responsive design for smaller screens */
-@media (max-width: 768px) {
-    .projects-container {
-        grid-template-columns: 1fr;
-    }
-
-    .project-card {
-        flex-direction: column;
-    }
-
-    .project-image-container {
-        width: 100%;
-        height: 200px;
-        border-radius: 8px 8px 0 0;
-    }
-}
-
-.blog-post {
-    margin-bottom: 2rem;
-    padding-bottom: 2rem;
-    border-bottom: 1px solid #ddd;
-}
-
-.blog-date {
-    color: #666;
-    font-size: 0.9rem;
-}
-
-.cv-section {
-    margin-bottom: 2.5rem;
-}
-
-.cv-item {
-    margin-bottom: 1.5rem;
-}
-
-.cv-year {
-    color: #EE6123;
-    font-weight: bold;
-}
-
 /* CV Page Specific Styles */
 .cv-container {
     display: flex;
-    gap: 3rem;  /* Increased gap between columns */
+    gap: 3rem;
     margin-top: 2rem;
 }
 
@@ -235,7 +99,7 @@ h3 {
 }
 
 .left-section li {
-    margin-bottom: 0.3rem;  /* Reduced space between items in left column */
+    margin-bottom: 0.3rem;
     font-size: 0.9rem;
     position: relative;
     padding-left: 1.2rem;
@@ -246,23 +110,34 @@ h3 {
     content: "•";
     position: absolute;
     left: 0;
-    color: #666;  /* gray color */
-    font-size: 1.2em;  /* bigger circles */
-    line-height: 1;  /* adjust line height for vertical alignment */
-    top: 1px;  /* fine-tune vertical position */
+    color: #666;
+    font-size: 1.2em;
+    line-height: 1;
+    top: 1px;
 }
 
-/* Right column content indentation */
+.cv-section {
+    margin-bottom: 2.5rem;
+}
+
+.cv-item {
+    margin-bottom: 1.5rem;
+}
+
+.cv-year {
+    color: #EE6123;
+    font-weight: bold;
+}
+
 .cv-section > p, 
 .cv-section > ul,
 .cv-item {
     margin-left: 1.5rem;
 }
 
-/* Update bullet points in CV lists */
 .cv-item ul {
-    list-style: none;  /* remove default bullets */
-    padding-left: 1.2rem;  /* adjust padding */
+    list-style: none;
+    padding-left: 1.2rem;
 }
 
 .cv-item ul li {
@@ -280,32 +155,25 @@ h3 {
     top: 1px;
 }
 
-/* Keep headings aligned to the left */
 .cv-section h2,
 .cv-item h3 {
     margin-left: 0;
 }
 
-/* Adjust line spacing in sections */
 .cv-section p {
-    margin-bottom: 0.5rem;  /* Reduced from default */
-    line-height: 1.4;  /* Tighter line height */
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
 }
 
 .cv-item p {
-    margin-bottom: 0.3rem;  /* Reduced space between paragraphs within items */
-}
-
-/* Maintain section spacing */
-.cv-section {
-    margin-bottom: 2.5rem;  /* Keep the larger gap between sections */
+    margin-bottom: 0.3rem;
 }
 
 /* Home page specific styles */
 .home-container {
     display: flex;
-    gap: 4rem; /* Increased gap between columns and line */
-    margin-top: 3rem; /* Added more top spacing */
+    gap: 4rem;
+    margin-top: 3rem;
     position: relative;
 }
 
@@ -317,7 +185,7 @@ h3 {
 
 .home-right-column {
     width: 75%;
-    padding-left: 1rem; /* Added padding to shift content away from line */
+    padding-left: 1rem;
     padding-top: 2rem;
 }
 
@@ -326,8 +194,8 @@ h3 {
 }
 
 .profile-image-home {
-    width: 90%; /* Made image slightly smaller */
-    border-radius: 12px; /* More rounded corners */
+    width: 90%;
+    border-radius: 12px;
     margin-bottom: 1.5rem;
 }
 
@@ -344,7 +212,7 @@ h3 {
 .contact-info strong {
     text-decoration: none;
     color: #EE6123;
-    font-weight: 500
+    font-weight: 500;
 }
 
 .contact-info a {
@@ -363,11 +231,11 @@ h3 {
     left: 25%;
     top: 0;
     bottom: 0;
-    width: 1px; /* Made the line thinner */
+    width: 1px;
     background: linear-gradient(180deg, 
         rgba(255,255,255,1) 0%, 
         rgba(128,128,128,0.5) 20%, 
-        rgba(128,128,128,1) 50%, /* Changed to gray in the middle */
+        rgba(128,128,128,1) 50%,
         rgba(128,128,128,0.5) 80%, 
         rgba(255,255,255,1) 100%
     );
@@ -387,18 +255,32 @@ h3 {
     line-height: 1.4;
 }
 
-/* Media query for screens between 1150px and 769px */
+/* Media queries */
 @media (max-width: 1150px) and (min-width: 769px) {
     .main-container {
         width: 80%;
     }
 }
 
-/* Responsive design for smaller screens */
 @media (max-width: 768px) {
     .main-container {
         width: 100%;
         padding: 0 15px;
+    }
+
+    /* Navigation adjustments for mobile */
+    .navbar-collapse {
+        margin-top: 1rem;
+    }
+
+    .navbar-nav {
+        gap: 0.5rem;
+        padding: 0.5rem 0;
+    }
+
+    .nav-link {
+        text-align: center;
+        margin: 0.25rem 0;
     }
 
     /* Home page responsiveness */
@@ -431,31 +313,6 @@ h3 {
         text-align: center;
     }
 
-    /* Navigation adjustments for mobile */
-    .navbar-collapse {
-        margin-top: 1rem;
-    }
-
-    .navbar-nav {
-        gap: 0.5rem;
-        padding: 0.5rem 0;
-    }
-
-    .nav-link {
-        text-align: center;
-        margin: 0.25rem 0;
-    }
-
-    /* Content spacing adjustments */
-    .home-section {
-        margin-bottom: 2rem;
-        padding: 0;
-    }
-
-    .home-list {
-        padding-left: 1.5rem;
-    }
-
     /* CV page responsiveness */
     .cv-container {
         flex-direction: column;
@@ -463,38 +320,11 @@ h3 {
     }
 
     .cv-left-column {
-        display: none; /* Hide left column on mobile */
+        display: none;
     }
 
     .cv-right-column {
-        width: 100%; /* Make right column take full width */
+        width: 100%;
         padding: 0;
     }
-}
-
-/* Publications page styles */
-
-.talks-list,
-.awards-list {
-    list-style: none;
-    padding-left: 0;
-}
-
-.talks-list li,
-.awards-list li {
-    margin-bottom: 0.8rem;
-    padding-left: 1.2rem;
-    position: relative;
-    line-height: 1.5;
-}
-
-.talks-list li::before,
-.awards-list li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    color: #666;  /* gray color */
-    font-size: 1.2em;  /* bigger circles */
-    line-height: 1;  /* adjust line height for vertical alignment */
-    top: 1px;  /* fine-tune vertical position */
 }
