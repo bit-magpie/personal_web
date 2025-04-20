@@ -12,7 +12,7 @@
             "title": "Grid-based Rotbot Path Generator",
             "description": "A Python module that generates a path for a robot to follow in a grid-based environment. The path is generated using the A* algorithm and can be in ROS",
             "date": "2022",
-            "technologies": ["NumPy", "A-star", "CV"],
+            "technologies": ["NumPy", "A-star", "CV", "ROS"],
             "url": "https://github.com/bit-magpie/grid_based_path_generator",
             "image": "img/project-imgs/path-plan.png"
         },
