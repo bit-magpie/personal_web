@@ -3,8 +3,8 @@
         {
             "title": "The Ethics of AI Development",
             "date": "2025-03-25",
-            "summary": "As AI continues to advance, we must consider the ethical implications of our developments. This post explores the philosophical challenges we face...",
-            "content": "The development of artificial intelligence raises fundamental questions about consciousness, responsibility, and the nature of intelligence itself..."
+            "summary": "As AI continues to advance, we must consider the ethical implications of our developments. This post explores the philosophical challenges we face in the development and deployment of artificial intelligence systems...",
+            "filename": "ethics-of-ai.md"
         }
     ]
 }

@@ -1,0 +1,10 @@
+{
+    "posts": [
+        {
+            "title": "Future of AI",
+            "date": "2025-03-25",
+            "summary": "Machine learning is a subset of artificial intelligence that focuses on the development of algorithms that allow computers to learn from and make predictions based on data. This post explores the fundamentals of machine learning, including supervised and unsupervised learning, and its applications in various fields.",
+            "filename": "future-of-ai.md"
+        }
+    ]
+}
