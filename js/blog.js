@@ -34,15 +34,18 @@ class BlogManager {
     displayPosts(posts, category) {
         const container = document.getElementById('posts-container');
         
-        if (!posts || posts.length === 0) {
+        // Filter for published posts only
+        const publishedPosts = posts.filter(post => post.published !== false);
+        
+        if (!publishedPosts || publishedPosts.length === 0) {
             container.innerHTML = '<p>No posts available in this category.</p>';
             return;
         }
 
         // Sort posts by date, newest first
-        posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+        publishedPosts.sort((a, b) => new Date(b.date) - new Date(a.date));
 
-        const postsHtml = posts.map(post => {
+        const postsHtml = publishedPosts.map(post => {
             const date = new Date(post.date).toLocaleDateString('en-US', {
                 year: 'numeric',
                 month: 'long',

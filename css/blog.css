@@ -90,6 +90,15 @@
     padding: 0 1rem;
 }
 
+.post-container a {
+    color: #EE6123;
+    text-decoration: none;
+}
+
+.post-container a:hover {
+    text-decoration: underline;
+}
+
 .post-header {
     margin-bottom: 2rem;
     text-align: center;

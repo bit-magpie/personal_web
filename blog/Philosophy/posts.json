@@ -2,10 +2,11 @@
     "posts": [
         {
             "title": "Ethics of AI",
-            "date": "2025-04-01",
-            "summary": "A philosophical exploration of ethical considerations in artificial intelligence development and deployment.",
+            "date": "2025-03-20",
+            "summary": "An exploration of the ethical considerations surrounding artificial intelligence development and deployment, including discussions on bias, transparency, and accountability.",
             "filename": "ethics-of-ai.md",
-            "contentType": "markdown"
+            "contentType": "markdown",
+            "published": true
         }
     ]
 }

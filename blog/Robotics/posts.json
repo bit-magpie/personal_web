@@ -2,10 +2,11 @@
     "posts": [
         {
             "title": "Social Robotics Advances",
-            "date": "2025-04-15",
-            "summary": "Recent advances in social robotics and human-robot interaction.",
+            "date": "2025-03-18",
+            "summary": "Recent developments in social robotics, focusing on human-robot interaction and emotional intelligence in robotic systems.",
             "filename": "social-robotics-advances.md",
-            "contentType": "markdown"
+            "contentType": "markdown",
+            "published": true
         }
     ]
 }

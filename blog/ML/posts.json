@@ -1,18 +1,44 @@
 {
     "posts": [
         {
+            "title": "Generating Classification Datasets",
+            "date": "2018-03-15",
+            "summary": "An interactive tutorial on generating various types of classification datasets using scikit-learn, including visualizations of different dataset types like blobs, circles, and moons.",
+            "filename": "generate_classification_dataset.ipynb",
+            "contentType": "notebook",
+            "published": true
+        },
+        {
+            "title": "Neural Network Classification with TensorFlow - MNIST",
+            "date": "2018-02-20",
+            "summary": "A practical guide to implementing neural networks for image classification using TensorFlow and the MNIST dataset. Learn how to build, train, and evaluate a deep learning model for handwritten digit recognition.",
+            "filename": "tf_nn_classification_mnist.ipynb",
+            "contentType": "notebook",
+            "published": true
+        },
+        {
+            "title": "Neural Network Regression with TensorFlow",
+            "date": "2018-01-24",
+            "summary": "Explore how to implement regression tasks using neural networks in TensorFlow. This tutorial covers building and training neural networks for continuous value prediction problems.",
+            "filename": "tf_nn_regression.ipynb",
+            "contentType": "notebook",
+            "published": true
+        },
+        {
+            "title": "MNIST Classification using TFLearn",
+            "date": "2018-02-07",
+            "summary": "Learn how to use TFLearn, a high-level API for TensorFlow, to build a convolutional neural network for classifying handwritten digits from the MNIST dataset. Discover the simplicity and power of TFLearn for deep learning tasks.",
+            "filename": "tflearn_mnist_classification.ipynb",
+            "contentType": "notebook",
+            "published": true
+        },
+        {
             "title": "Future of AI",
             "date": "2025-03-25",
             "summary": "Machine learning is a subset of artificial intelligence that focuses on the development of algorithms that allow computers to learn from and make predictions based on data. This post explores the fundamentals of machine learning, including supervised and unsupervised learning, and its applications in various fields.",
             "filename": "future-of-ai.md",
-            "contentType": "markdown"
-        },
-        {
-            "title": "Generating Classification Datasets",
-            "date": "2025-04-21",
-            "summary": "An interactive tutorial on generating various types of classification datasets using scikit-learn, including visualizations of different dataset types like blobs, circles, and moons.",
-            "filename": "generate_classification_dataset.ipynb",
-            "contentType": "notebook"
+            "contentType": "markdown",
+            "published": false
         }
     ]
 }

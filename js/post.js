@@ -60,6 +60,12 @@ class PostManager {
                 return;
             }
 
+            // Check if post is published
+            if (post.published === false) {
+                this.displayError('This post is not yet published');
+                return;
+            }
+
             // Update page title
             document.title = `${post.title} - Isuru Jayarathne`;
 
@@ -223,7 +229,13 @@ class PostManager {
 
     displayError(message) {
         const container = document.getElementById('post-content');
-        container.innerHTML = `<div class="error-message">${message}</div>`;
+        container.innerHTML = `
+            <div class="error-message">
+                <h2>Error</h2>
+                <p>${message}</p>
+                <p><a href="blog.html">Return to Blog</a></p>
+            </div>
+        `;
     }
 }
 
