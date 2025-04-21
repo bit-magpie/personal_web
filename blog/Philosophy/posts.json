@@ -1,10 +1,11 @@
 {
     "posts": [
         {
-            "title": "The Ethics of AI Development",
-            "date": "2025-03-25",
-            "summary": "As AI continues to advance, we must consider the ethical implications of our developments. This post explores the philosophical challenges we face in the development and deployment of artificial intelligence systems...",
-            "filename": "ethics-of-ai.md"
+            "title": "Ethics of AI",
+            "date": "2025-04-01",
+            "summary": "A philosophical exploration of ethical considerations in artificial intelligence development and deployment.",
+            "filename": "ethics-of-ai.md",
+            "contentType": "markdown"
         }
     ]
 }

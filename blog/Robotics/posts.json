@@ -1,10 +1,11 @@
 {
     "posts": [
         {
-            "title": "Recent Advances in Social Robotics",
+            "title": "Social Robotics Advances",
             "date": "2025-04-15",
-            "summary": "Social robotics has seen remarkable progress in recent years, particularly in the areas of human-robot interaction and emotional intelligence. This post explores the latest developments in social robotics and their implications for future human-robot collaboration.",
-            "filename": "social-robotics-advances.md"
+            "summary": "Recent advances in social robotics and human-robot interaction.",
+            "filename": "social-robotics-advances.md",
+            "contentType": "markdown"
         }
     ]
 }
