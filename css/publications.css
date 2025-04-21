@@ -103,12 +103,12 @@
     color: #666;
 }
 
-a {
+.publications-container a {
     color: #EE6123;
     text-decoration: none;
 }
 
-a:hover {
+.publications-container a:hover {
     text-decoration: underline;
 }
 
