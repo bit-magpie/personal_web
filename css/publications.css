@@ -112,6 +112,19 @@ a:hover {
     text-decoration: underline;
 }
 
+.total-citations {
+    float: right;
+    color: #666;
+    padding: 0.5rem 1rem;
+    font-size: 0.95rem;
+}
+
+.total-citations-value {
+    font-weight: bold;
+    font-size: larger;
+    color: #EE6123;
+}
+
 /* Media queries for mobile devices */
 @media (max-width: 768px) {
     .sorting-controls {

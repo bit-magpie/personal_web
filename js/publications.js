@@ -12,9 +12,18 @@ class PublicationManager {
             const data = await response.json();
             console.log('Loaded publications:', data);
             this.publications = data.publications;
+            this.updateTotalCitations();
             this.renderPublications();
         } catch (error) {
             console.error('Error loading publications:', error);
+        }
+    }
+
+    updateTotalCitations() {
+        const total = this.publications.reduce((sum, pub) => sum + (pub.citations || 0), 0);
+        const totalCitationsElement = document.getElementById('totalCitationsValue');
+        if (totalCitationsElement) {
+            totalCitationsElement.textContent = `${total}`;
         }
     }
 
