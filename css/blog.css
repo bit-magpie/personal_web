@@ -360,6 +360,18 @@
     font-size: 0.9rem;
 }
 
+input[type=text] {
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+input[type=text]:focus {
+    border: 1px solid #EE6123;
+}
+
 #search-button {
     background-color: #EE6123;
     color: white;
