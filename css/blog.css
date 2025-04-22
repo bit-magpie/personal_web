@@ -341,3 +341,47 @@
     border-radius: 4px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.1);
 }
+
+/* Search box styles */
+.search-container {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    top: 20px;
+    right: 20px;
+    z-index: 1;
+}
+
+#search-input {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 0.9rem;
+}
+
+#search-button {
+    background-color: #EE6123;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-button:hover {
+    background-color: #d94d0e;
+}
+
+/* Blog header styles */
+.blog-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.blog-header h1 {
+    margin: 0;
+}
