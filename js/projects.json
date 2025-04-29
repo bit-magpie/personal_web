@@ -2,11 +2,19 @@
     "projects": [
         {
             "title": "Classic Learner App",
-            "description": "A web application that allows train classical ML algorithms for the given CVS formatted datasets",
+            "description": "A web application that allows to train classical ML algorithms for the given CVS formatted datasets",
             "date": "2024",
             "technologies": ["Streamlit", "scikit-learn", "XGBoost"],
             "url": "https://classiclearner.streamlit.app/",
             "image": "img/project-imgs/classic_learner.png"
+        },
+        {
+            "title": "Dataset Generator",
+            "description": "Streamlit app for generating datasets for machine learning. The app allows users to create datasets with different distributions and noise levels.",
+            "date": "2024",
+            "technologies": ["Streamlit", "scikit-learn", "NumPy"],
+            "url": "https://generatedataset.streamlit.app/",
+            "image": "img/project-imgs/data_gen.png"
         },
         {
             "title": "Diffusion-based Imitation Learning",
