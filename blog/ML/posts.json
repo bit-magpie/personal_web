@@ -1,6 +1,14 @@
 {
     "posts": [
         {
+            "title": "Some Interview Coding Questions",
+            "date": "2025-02-23",
+            "summary": "This notebook contains development of some neural networks and batching methods. It includes a simple neural network implementation, a custom data loader, and a batching method for training the model.",
+            "filename": "some_interview_coding tests.ipynb",
+            "contentType": "notebook",
+            "published": true
+        },
+        {
             "title": "Generating Classification Datasets",
             "date": "2018-03-15",
             "summary": "An interactive tutorial on generating various types of classification datasets using scikit-learn, including visualizations of different dataset types like blobs, circles, and moons.",
