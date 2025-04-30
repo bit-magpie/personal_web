@@ -1,6 +1,7 @@
 class PostManager {
     constructor() {
         this.configureMarked();
+        this.configureMathJax();
         this.loadPost();
         this.contentRenderers = {
             'markdown': this.renderMarkdown.bind(this),
@@ -22,6 +23,19 @@ class PostManager {
             headerIds: true,
             mangle: false
         });
+    }
+
+    configureMathJax() {
+        window.MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
     }
 
     async loadPost() {
@@ -120,6 +134,13 @@ class PostManager {
         document.querySelectorAll('pre code').forEach((block) => {
             hljs.highlightBlock(block);
         });
+
+        // Trigger MathJax to process the new content
+        if (window.MathJax) {
+            MathJax.typesetPromise([contentContainer]).catch((err) => {
+                console.log('MathJax error:', err);
+            });
+        }
     }
 
     async renderHtml(post, folderPath) {
@@ -166,7 +187,10 @@ class PostManager {
                                 htmlContent += `<pre class="output-text">${this.escapeHtml(output.text.join(''))}</pre>`;
                             } else if (output.output_type === 'display_data' || output.output_type === 'execute_result') {
                                 // Handle various MIME types
-                                if (output.data['image/png']) {
+                                if (output.data['text/latex']) {
+                                    // LaTeX output
+                                    htmlContent += `<div class="output-latex">$$${output.data['text/latex'].join('')}$$</div>`;
+                                } else if (output.data['image/png']) {
                                     // PNG image output
                                     htmlContent += `<img src="data:image/png;base64,${output.data['image/png']}" class="output-image" alt="Plot output">`;
                                 } else if (output.data['image/jpeg']) {
@@ -197,6 +221,13 @@ class PostManager {
             document.querySelectorAll('pre code').forEach((block) => {
                 hljs.highlightBlock(block);
             });
+
+            // Trigger MathJax to process the new content
+            if (window.MathJax) {
+                MathJax.typesetPromise([contentContainer]).catch((err) => {
+                    console.log('MathJax error:', err);
+                });
+            }
         } catch (error) {
             console.error('Error rendering notebook:', error);
             this.displayError('Error loading the notebook');
