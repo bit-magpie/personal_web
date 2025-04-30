@@ -25,6 +25,14 @@
             "image": "img/project-imgs/diffusion_il.png"
         },
         {
+            "title": "Parallel Tether Control System",
+            "description": "A control system for a parallel tethered robot. The system use tethers to control elevation and orientation of sensor base to collect data in disaster sites.",
+            "date": "2023",
+            "technologies": ["FreeCAD", "Arduino", "Streamlit"],
+            "url": "https://github.com/bit-magpie/Parallel_Tether_control_system",
+            "image": "img/project-imgs/ptc_assembly.png"
+        },
+        {
             "title": "Grid-based Rotbot Path Generator",
             "description": "A Python module that generates a path for a robot to follow in a grid-based environment. The path is generated using the A* algorithm and can be in ROS",
             "date": "2022",
