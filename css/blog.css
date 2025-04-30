@@ -316,6 +316,8 @@
     font-size: 14px;
     white-space: pre-wrap;
     color: #333;
+    max-height: 500px;
+    overflow: scroll;
 }
 
 .output-error {
