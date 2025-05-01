@@ -27,8 +27,26 @@
     {
       "title": "ブレインコンピューターインターフェースについて",
       "date": "February 2022",
-      "event": "FAN 2023 Conference in Fukuoka",
+      "event": "Tajima Rotary Club meeting",
       "file": "Tajima_bci_presentation.pdf"
+    },
+    {
+      "title": "Optimization of Robot Controlling in Industrial Environment",
+      "date": "July 2021",
+      "event": "Robocom-FAcom meeting material",
+      "file": "Robocom-FAcom_meeting.pdf"
+    },
+    {
+      "title": "3D Point Cloud Map Generation with Choreonoid",
+      "date": "September 2021",
+      "event": "AY2021 project report",
+      "file": "Report_AY2021.pdf"
+    },
+    {
+      "title": "Adaptive Self‑maintenance Agricultural Robotic Systems for Cultivation on Mars",
+      "date": "April 2023",
+      "event": "JSPS grant project proposal",
+      "file": "Weekly_meeting_2023_04.pdf"
     }
   ]
 }
