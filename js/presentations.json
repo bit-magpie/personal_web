@@ -59,6 +59,12 @@
       "date": "April 2020",
       "event": "TIS, JADsys colaboration project meaning",
       "file": "Multi-robot_path_planning.pdf"
+    },
+    {
+      "title": "Low Cost Line-Following and Load-Picking Robot",
+      "date": "April 2016",
+      "event": "IEICE Service Computing Branch Research Presentation Meeting",
+      "file": "Low_cost_line-following.pdf"
     }
   ]
 }
