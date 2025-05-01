@@ -2,7 +2,7 @@
     "projects": [
         {
             "title": "Classic Learner App",
-            "description": "A web application that allows to train classical ML algorithms for the given CVS formatted datasets",
+            "description": "A web application that allows to train classical ML algorithms for the given CSV formatted datasets",
             "date": "2024",
             "technologies": ["Streamlit", "scikit-learn", "XGBoost"],
             "url": "https://classiclearner.streamlit.app/",
