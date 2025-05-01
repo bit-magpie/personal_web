@@ -125,6 +125,66 @@
     color: #EE6123;
 }
 
+/* Presentations section styles */
+.section {
+    margin-top: 3rem;
+    padding-top: 1rem;
+    border-top: 1px solid #eee;
+}
+
+.presentations-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.presentation-card {
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+}
+
+.presentation-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9;
+}
+
+.presentation-card:hover:after {
+    opacity: 1;
+}
+
+.presentation-info {
+    padding: 1.5rem;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.presentation-title {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.presentation-card:hover .presentation-title {
+    color: #EE6123;
+}
+
+.presentation-event, .presentation-date {
+    color: #666;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
 /* Media queries for mobile devices */
 @media (max-width: 768px) {
     .sorting-controls {
@@ -147,4 +207,18 @@
     .publication-table td:first-child {
         padding-right: 0.5rem;
     }
+
+    .presentations-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Talks and awards section */
+.talks-list, .awards-list {
+    padding-left: 1.5rem;
+    line-height: 1.6;
+}
+
+.talks-list li, .awards-list li {
+    margin-bottom: 0.75rem;
 }

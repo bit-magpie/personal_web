@@ -1,0 +1,34 @@
+{
+  "presentations": [
+    {
+      "title": "Basics of Brain-Computer Interfaces",
+      "date": "July 2021",
+      "event": "IEEE Young Professionals Sri Lanka",
+      "file": "Basics_of_BCI.pdf"
+    },
+    {
+      "title": "Brain-Computer Interfaces",
+      "date": "2018",
+      "event": "Fortnight Meetup, Sabaragamuwa University of Sri Lanka",
+      "file": "Intro_BCI_sab_fn.pdf"
+    },
+    {
+      "title": "New Technological Innovations in BCI",
+      "date": "April 2022",
+      "event": "New Technological Innovation Webinar Series",
+      "file": "Basics_of_BCI_V2.pdf"
+    },
+    {
+      "title": "Parallel Tether Control System for Data Collection in Nuclear Disaster Site",
+      "date": "September 2023",
+      "event": "FAN 2023 Conference in Fukuoka",
+      "file": "FAN2023_Parallel_tether_control.pdf"
+    },
+    {
+      "title": "ブレインコンピューターインターフェースについて",
+      "date": "February 2022",
+      "event": "FAN 2023 Conference in Fukuoka",
+      "file": "Tajima_bci_presentation.pdf"
+    }
+  ]
+}
