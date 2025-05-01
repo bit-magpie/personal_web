@@ -11,7 +11,7 @@
         {
             "title": "Dataset Generator",
             "description": "Streamlit app for generating datasets for machine learning. The app allows users to create datasets with different distributions and noise levels.",
-            "date": "2024",
+            "date": "2025",
             "technologies": ["Streamlit", "scikit-learn", "NumPy"],
             "url": "https://generatedataset.streamlit.app/",
             "image": "img/project-imgs/data_gen.png"
@@ -39,6 +39,14 @@
             "technologies": ["NumPy", "A-star", "CV", "ROS"],
             "url": "https://github.com/bit-magpie/grid_based_path_generator",
             "image": "img/project-imgs/path-plan.png"
+        },
+        {
+            "title": "Path Planning Visualization",
+            "description": "A Python module that visualizes the path planning process for a robot in a grid-based environment. The visualization is done using PyGame library.",
+            "date": "2021",
+            "technologies": ["PyGame", "A-star", "NumPy"],
+            "url": "https://github.com/bit-magpie/PyGame_path_planning_visualizer",
+            "image": "img/project-imgs/path_plan_vis.png"
         },
         {
             "title": "SSD: Single Shot MultiBox Detector (Keras)",
