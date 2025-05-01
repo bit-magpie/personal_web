@@ -141,6 +141,7 @@
 
 .presentation-card {
     border: 1px solid #eee;
+    border-left: #EE6123 4px solid;
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);

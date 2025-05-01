@@ -47,6 +47,18 @@
       "date": "April 2023",
       "event": "JSPS grant project proposal",
       "file": "Weekly_meeting_2023_04.pdf"
+    },
+    {
+      "title": "A Machine Learning Methods for Time Series Data Analysis",
+      "date": "May 2023",
+      "event": "Konica-Minolta Interview Presentation",
+      "file": "konica_minolta_interview.pdf"
+    },
+    {
+      "title": "Multirobot Path Planning for Mobile Robots",
+      "date": "April 2020",
+      "event": "TIS, JADsys colaboration project meaning",
+      "file": "Multi-robot_path_planning.pdf"
     }
   ]
 }
