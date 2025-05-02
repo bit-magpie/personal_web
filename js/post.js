@@ -230,7 +230,7 @@ class PostManager {
             }
         } catch (error) {
             console.error('Error rendering notebook:', error);
-            this.displayError('Error loading the notebook');
+            this.displayError('Error loading the notebook. Please try refreshing the page.');
         }
     }
 

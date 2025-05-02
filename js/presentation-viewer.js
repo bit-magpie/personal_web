@@ -6,6 +6,7 @@ let pageNumPending = null;
 let scale = 1.5;
 let canvas = null;
 let ctx = null;
+let currentPdfUrl = '';
 
 // Parse query parameters to get the PDF file path
 function getQueryParam(param) {
@@ -31,12 +32,19 @@ function initPdfViewer() {
         return;
     }
     
+    // Set the PDF URL for the "Open in new tab" link
+    currentPdfUrl = `presentations/${pdfUrl}`;
+    const openPdfLink = document.getElementById('openPdfLink');
+    if (openPdfLink) {
+        openPdfLink.href = currentPdfUrl;
+    }
+    
     // Set up PDF.js worker
     // Using the CDN version of PDF.js already loaded in HTML
     pdfjsLib.GlobalWorkerOptions.workerSrc = 'https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.worker.min.js';
     
     // Load the PDF
-    loadPdf(`presentations/${pdfUrl}`);
+    loadPdf(currentPdfUrl);
     
     // Set up button handlers
     document.getElementById('prevBtn').addEventListener('click', onPrevPage);

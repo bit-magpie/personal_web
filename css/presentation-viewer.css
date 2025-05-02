@@ -46,8 +46,15 @@
     color: #444;
 }
 
-.back-link {
+.navigation-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-top: 20px;
+}
+
+.back-link {
+    margin-top: 0;
     display: inline-block;
     color: #EE6123;
     text-decoration: none;
@@ -55,6 +62,19 @@
 }
 
 .back-link:hover {
+    color: #d94d0e;
+    text-decoration: underline;
+}
+
+.open-pdf-link {
+    color: #EE6123;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+}
+
+.open-pdf-link:hover {
     color: #d94d0e;
     text-decoration: underline;
 }
@@ -73,5 +93,15 @@
         width: 100%;
         text-align: center;
         margin: 10px 0;
+    }
+
+    .navigation-links {
+        flex-direction: column;
+        gap: 15px;
+        align-items: flex-start;
+    }
+    
+    .open-pdf-link {
+        align-self: flex-end;
     }
 }
