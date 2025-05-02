@@ -8,7 +8,7 @@
     },
     {
       "title": "Brain-Computer Interfaces",
-      "date": "2018",
+      "date": "January 2018",
       "event": "Fortnight Meetup, Sabaragamuwa University of Sri Lanka",
       "file": "Intro_BCI_sab_fn.pdf"
     },
@@ -77,6 +77,12 @@
       "date": "March 2019",
       "event": "Poster Session - ACM IUI 2019",
       "file": "IUI_2019_poster_landscape.pdf"
+    },
+    {
+      "title": "Brain ID: Development of an EEG-Based Biometric Authentication System",
+      "date": "October 2016",
+      "event": "IEEE 7th Annual Information Technology, Electronics and Mobile Communication Conference (IEMCON)",
+      "file": "Brain_ID_IEMCON.pdf"
     }
   ]
 }
