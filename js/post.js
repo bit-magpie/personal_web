@@ -1,8 +1,15 @@
 class PostManager {
     constructor() {
         this.configureMarked();
-        this.configureMathJax();
-        this.loadPost();
+        this.resourcesLoaded = false;
+        this.ensureResourcesLoaded().then(() => {
+            this.resourcesLoaded = true;
+            this.loadPost();
+        }).catch(error => {
+            console.error('Error loading resources:', error);
+            this.displayError('Failed to load required resources. Please try refreshing the page.');
+        });
+        
         this.contentRenderers = {
             'markdown': this.renderMarkdown.bind(this),
             'html': this.renderHtml.bind(this),
@@ -25,17 +32,46 @@ class PostManager {
         });
     }
 
-    configureMathJax() {
-        window.MathJax = {
-            tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']],
-                displayMath: [['$$', '$$'], ['\\[', '\\]']],
-                processEscapes: true
-            },
-            svg: {
-                fontCache: 'global'
+    async ensureResourcesLoaded() {
+        // Check if MathJax is already configured
+        if (!window.MathJax) {
+            window.MathJax = {
+                tex: {
+                    inlineMath: [['$', '$'], ['\\(', '\\)']],
+                    displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                    processEscapes: true
+                },
+                svg: {
+                    fontCache: 'global'
+                }
+            };
+        }
+        
+        // Wait for MathJax to be fully loaded
+        return new Promise((resolve, reject) => {
+            if (window.MathJax.typesetPromise) {
+                // MathJax is already loaded
+                resolve();
+            } else {
+                // Wait for MathJax to load
+                const checkMathJax = () => {
+                    if (window.MathJax.typesetPromise) {
+                        resolve();
+                    } else {
+                        setTimeout(checkMathJax, 100);
+                    }
+                };
+                setTimeout(checkMathJax, 100);
+                
+                // Set a timeout to prevent infinite waiting
+                setTimeout(() => {
+                    if (!window.MathJax.typesetPromise) {
+                        console.warn("MathJax loading timeout, continuing anyway");
+                        resolve();
+                    }
+                }, 5000);
             }
-        };
+        });
     }
 
     async loadPost() {
@@ -157,6 +193,11 @@ class PostManager {
 
     async renderNotebook(post, folderPath) {
         try {
+            // Ensure resources are loaded before rendering
+            if (!this.resourcesLoaded) {
+                await this.ensureResourcesLoaded();
+            }
+            
             const response = await fetch(`${folderPath}/posts/${post.filename}`);
             if (!response.ok) {
                 throw new Error('Notebook file not found');
@@ -222,11 +263,15 @@ class PostManager {
                 hljs.highlightBlock(block);
             });
 
-            // Trigger MathJax to process the new content
-            if (window.MathJax) {
-                MathJax.typesetPromise([contentContainer]).catch((err) => {
+            // Ensure MathJax is available before typesetting
+            if (window.MathJax && window.MathJax.typesetPromise) {
+                try {
+                    await window.MathJax.typesetPromise([contentContainer]);
+                } catch (err) {
                     console.log('MathJax error:', err);
-                });
+                }
+            } else {
+                console.warn('MathJax not available for typesetting');
             }
         } catch (error) {
             console.error('Error rendering notebook:', error);

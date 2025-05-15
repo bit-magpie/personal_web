@@ -306,6 +306,15 @@ h3 {
         width: 100%;
         padding: 0;
     }
+    
+    /* Reorder columns on mobile - right column first */
+    .home-left-column {
+        order: 2;
+    }
+    
+    .home-right-column {
+        order: 1;
+    }
 
     .gradient-separator {
         display: none;
