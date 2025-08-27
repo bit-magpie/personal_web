@@ -7,7 +7,7 @@
       "journal_name": "7th IEEE Annual Information Technology, Electronics, and Mobile Communication Conference (IEMCON)",
       "date": "2016-10",
       "url": "https://doi.org/10.1109/IEMCON.2016.7746325",
-      "citations": 96,
+      "citations": 98,
       "note": "Best paper in Electromagnetics and Control System track"
     },
     {
@@ -26,7 +26,7 @@
       "journal_name": "PLOS One",
       "date": "2020-09",
       "url": "https://doi.org/10.1371/journal.pone.0238872",
-      "citations": 35
+      "citations": 38
     },
     {
       "authors": ["N. Matsui", "I. Jayarathne", "H. Kageyama", "K. Naruse", "K. Urabe", "R. Sakamoto", "T. Mashiko", "S. Kumada", "Y. Yaguchi", "M. Yashiro", "Y. Ishibashi", "M. Yutani"],
@@ -35,7 +35,7 @@
       "journal_name": "Journal of Robotics and Mechatronics",
       "date": "2022-02",
       "url": "https://www.jstage.jst.go.jp/article/jrobomech/34/1/34_86/_pdf",
-      "citations": 10
+      "citations": 12
     },       
     {
       "authors": ["I. Jayarathne", "M. Cohen", "M. Frishkopf", "G. Mulyk"],
@@ -53,7 +53,7 @@
       "journal_name": "326th SICE Tohoku Branch Workshop",
       "date": "2019-11",
       "url": "https://www.researchgate.net/publication/337929447_Autoencoder-based_One-class_Classification#fullTextFileContent",
-      "citations": 2
+      "citations": 3
     },
     {
       "authors": ["J. Taery Kim", "A. Naik", "I. Jayarathne", "S. Ha", "J.Y. Chew"],
@@ -62,7 +62,7 @@
       "journal_name": "IEEE International Conference on Robot & Human Interactive Communication (RO-MAN 2024)",
       "date": "2024-08",
       "url": "https://arxiv.org/abs/2404.06611",
-      "citations": 1
+      "citations": 2
     },
     {
       "authors": ["J.Y. Chew", "I. Jayarathne"],
