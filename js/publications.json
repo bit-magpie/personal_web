@@ -7,7 +7,7 @@
       "journal_name": "7th IEEE Annual Information Technology, Electronics, and Mobile Communication Conference (IEMCON)",
       "date": "2016-10",
       "url": "https://doi.org/10.1109/IEMCON.2016.7746325",
-      "citations": 98,
+      "citations": 101,
       "note": "Best paper in Electromagnetics and Control System track"
     },
     {
@@ -17,7 +17,7 @@
       "journal_name": "IEEE 8th International Conference on Awareness Science and Technology (iCAST)",
       "date": "2017-11",
       "url": "https://doi.org/10.1109/ICAST.2017.8256471",
-      "citations": 49
+      "citations": 50
     },
     {
       "authors": ["I. Jayarathne", "M. Cohen", "S. Amarakeerthi"],
@@ -26,7 +26,7 @@
       "journal_name": "PLOS One",
       "date": "2020-09",
       "url": "https://doi.org/10.1371/journal.pone.0238872",
-      "citations": 39
+      "citations": 40
     },
     {
       "authors": ["N. Matsui", "I. Jayarathne", "H. Kageyama", "K. Naruse", "K. Urabe", "R. Sakamoto", "T. Mashiko", "S. Kumada", "Y. Yaguchi", "M. Yashiro", "Y. Ishibashi", "M. Yutani"],
@@ -36,7 +36,16 @@
       "date": "2022-02",
       "url": "https://www.jstage.jst.go.jp/article/jrobomech/34/1/34_86/_pdf",
       "citations": 12
-    },       
+    },
+    {
+      "authors": ["J. Taery Kim", "A. Naik", "I. Jayarathne", "S. Ha", "J.Y. Chew"],
+      "title": "Modeling social interaction dynamics using temporal graph networks",
+      "type": "conference",
+      "journal_name": "IEEE International Conference on Robot & Human Interactive Communication (RO-MAN 2024)",
+      "date": "2024-08",
+      "url": "https://arxiv.org/abs/2404.06611",
+      "citations": 4
+    },
     {
       "authors": ["I. Jayarathne", "M. Cohen", "M. Frishkopf", "G. Mulyk"],
       "title": "Relaxation sweet spot exploration in pantophonic musical soundscape using reinforcement learning",
@@ -54,15 +63,6 @@
       "date": "2019-11",
       "url": "https://www.researchgate.net/publication/337929447_Autoencoder-based_One-class_Classification#fullTextFileContent",
       "citations": 3
-    },
-    {
-      "authors": ["J. Taery Kim", "A. Naik", "I. Jayarathne", "S. Ha", "J.Y. Chew"],
-      "title": "Modeling social interaction dynamics using temporal graph networks",
-      "type": "conference",
-      "journal_name": "IEEE International Conference on Robot & Human Interactive Communication (RO-MAN 2024)",
-      "date": "2024-08",
-      "url": "https://arxiv.org/abs/2404.06611",
-      "citations": 2
     },
     {
       "authors": ["J.Y. Chew", "I. Jayarathne"],
